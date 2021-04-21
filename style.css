@@ -8,13 +8,14 @@ body{
 }
 #main{
     width: 50%;
-    height: 50%;
-    background-color: silver;
+    height: 100px;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     padding-left: 10px;
     padding-right: 10px;
-    justify-content:space-between;
+    padding-top: 30px;
+    justify-content:space-around;
     text-align: center;
     margin-top: 20%;
     margin-left: 33.333%;
