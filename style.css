@@ -1,0 +1,23 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(168, 98, 151, 0.91);
+}
+#main{
+    width: 50%;
+    height: 50%;
+    background-color: silver;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content:space-between;
+    text-align: center;
+    margin-top: 20%;
+    margin-left: 33.333%;
+    font-size: 50px;
+    border-radius: 10px;
+}
