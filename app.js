@@ -1,5 +1,5 @@
 
-
+// digital watch
 function digitalCock(){
 
 let newDayeTime = new Date ();
@@ -18,10 +18,31 @@ if ( corentHouers < 10){
     corentSeconds = "0 " + corentSeconds;
 }
 
-houers.innerHTML = corentHouers ;
-minutes .innerHTML =  corentMinutes;
-seconds .innerHTML =  corentSeconds;
+houers.innerHTML = "( " + corentHouers ;
+minutes .innerHTML = ". " + corentMinutes;
+seconds .innerHTML = ". " + corentSeconds + " )";
 
 }
 
 setInterval(digitalCock , 1000);
+
+
+// backgroundColor = hexCoor
+
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+const btn = document.getElementById('subment');
+const clockDiv = document.getElementById('main');
+
+
+btn.addEventListener('click', function(){
+    let hexCoor = "#";
+    for (let c = 0 ; c < 6 ; c++){
+        hexCoor += hex[getRandomColor()];
+    }
+
+    clockDiv.style.backgroundColor = hexCoor;
+});
+
+function getRandomColor(){
+    return Math.floor(Math.random() * hex.length);
+}
